@@ -1,0 +1,35 @@
+/* ********** HEADER ********** */
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.header__image {
+  border-radius: 10px;
+  width: 100px;
+}
+
+.header__link {
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+
+.header__link--blue {
+  border: solid 2px #f0ecec;
+  color: #2e94fa;
+  font-size: 22px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.header__link--grey {
+  color: #837e7e;
+  text-decoration: none;
+}

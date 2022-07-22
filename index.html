@@ -6,20 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Allows you to put an icon in the browser tab -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Always put reset file before style file for browser support -->
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/style.css">
   <title>Copycat du site Alan</title>
 </head>
 <body>
   
   <!-- Start : Menu  -->
-  <header>
-    <img src="assets/logo-alan.png" alt="Logo Alan">
-    <nav>
-      <a href="#">Nos offres</a>
-      <a href="#">Témoignages</a>
-      <a href="#">Pour nos membres</a>
-      <a href="#">Ressources</a>
-      <a href="#">A propos d'Alan</a>
-      <a href="#">Me connecter</a>
+  <header class="header">
+    <img class="header__image" src="assets/logo-alan.png" alt="Logo Alan">
+    <nav class="header__nav">
+      <a class="header__link header__link--grey" href="#">Nos offres</a>
+      <a class="header__link header__link--grey" href="#">Témoignages</a>
+      <a class="header__link header__link--grey" href="#">Pour nos membres</a>
+      <a class="header__link header__link--grey" href="#">Ressources</a>
+      <a class="header__link header__link--grey" href="#">A propos d'Alan</a>
+      <a class="header__link header__link--blue" href="#">Me connecter</a>
     </nav>
   </header>
   <!-- End : Menu  -->
