@@ -79,23 +79,17 @@
     ********** COVER ********** 
 */
 
-.color { 
-  color: #22e39e;
-}
-
 .cover {
   padding-bottom: 30px;
   padding-top: 80px;
 }
 
-.cover__container--images, .cover__container--texts {
-  width: 50%;
-}
-
 .cover__container--images {
   display: flex;
-  gap: 15px;
-  padding-left: 15px;
+  flex-direction: column;
+  gap: 25px;
+  height: 370px;
+  padding: 0px 5px;
 }
 
 .cover__container--link {
@@ -107,9 +101,27 @@
 }
 
 .cover__container--texts {
+  height: 370px;
   padding-left: 5px;
   padding-right: 18%;
 }
+
+.cover__container--texts h1 {
+  font-size: 38px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+}
+
+.cover__container--texts h1 strong {
+  color: #22e39e;
+}
+
+.cover__container--texts p {
+  font-size: 22px;
+  line-height: 1;
+  padding-bottom: 48px;
+}
+
 
 .cover__images--alan, .cover__images--computer {
   width: 271px;
@@ -119,16 +131,4 @@
 .cover__images--mobile {
   width: 271px;
   height: 370px;
-}
-
-.cover__introduction {
-  font-size: 22px;
-  line-height: 1;
-  padding-bottom: 28px;
-}
-
-.cover__title {
-  font-size: 40px;
-  padding-top: 8px;
-  padding-bottom: 20px;
 }
