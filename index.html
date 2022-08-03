@@ -12,7 +12,8 @@
   <title>Copycat du site Alan</title>
 </head>
 <body>
-  <!-- Start : Header -->
+
+  <!-- Start : HEADER -->
   <header class="header">
     <img class="header__image" src="assets/logo-alan.png" alt="Logo Alan">
     <nav class="header__nav">
@@ -24,91 +25,95 @@
       <a class="header__link header__link--blue" href="#">Me connecter</a>
     </nav>
   </header>
-  <!-- End : Header -->
-  <!-- Start : Main -->
+  <!-- End : HEADER -->
+
+  <!-- Start : MAIN -->
   <main>
-    <!-- Start : First section -->
+
+    <!-- Start : First section = COVER -->
     <section class="cover">
       <div class="flux">
-        <div class="cover__container--texts">
-          <h1>Votre partenaire santé <strong>tout-en-un.</strong></h1>
-          <p>
+        <div class="cover__introduction">
+          <h1 class="cover__title">Votre partenaire santé <span>tout-en-un.</span></h1>
+          <p class="cover__description">
             De l’assurance santé au bien-être mental en passant par sa clinique virtuelle, Alan 
             propose une solution complète pour les entreprises de toutes tailles et les indépendants.
           </p>
-          <a class="cover__container--link" href="#">Découvrir les offres</a>
+          <a class="cover__link" href="#">Découvrir les offres</a>
         </div>
-        <div class="cover__container--images">
-          <img 
-            class="cover__images--computer"
-            src="assets/homepage-computer.jpg" 
-            alt="Capture d'écran ordinateur"
-            >
-          <img class="cover__images--alan"
-            src="assets/homepage-image-alan.svg"
-            alt="Capture d'écran Alan"
-            >
+        <div class="cover__images-left">
+          <img src="assets/homepage-computer.jpg" alt="Capture d'écran ordinateur">
+          <img src="assets/homepage-image-alan.svg" alt="Capture d'écran Alan">
         </div>
-        <div>
-          <img 
-            class="cover__images--mobile"
-            src="assets/homepage-mobile.png" 
-            alt="Capture d'écran de mobile"
-            >
+        <div class="cover__images-right">
+          <img class="cover__mobile" src="assets/homepage-mobile.png" alt="Capture d'écran de mobile">
         </div>
       </div>
     </section>
-    <!-- End : First section -->
-    <!-- Start : Second section -->
-    <section class="offers flux">
-      <h2 class="offers__title">Trouvez l’offre pensée pour vous.</h2>
+    <!-- End : First section = COVER -->
+
+    <!-- Start : Second section = OFFERS -->
+    <section class="offers">
+      <h2 class="offers__title">Trouvez l’offre <span>pensée pour vous.</span></h2>
       <p class="offers__introduction">
-        👋 Salarié(e) d'une entreprise qui a rejoint Alan ?
-        <a href="#">Découvrez comment vous inscrire</a>
+        <span>👋</span> Salarié(e) d'une entreprise qui a rejoint Alan ?
+        <a class="offers__link" href="#">Découvrez comment vous inscrire</a>
       </p>
-      <ul class="offers__list">
-        <li class="card-offer">
-          <div class="card-offer__container--title">
-            <img class="card-offer__icon" src="assets/emoji-rocket.svg" alt="Emoji fusée">
-            <h3 class="card-offer__title">Startups & PME</h3>
-          </div>
-          <p class="card-offer__description">
-            Gagnez du temps sur la gestion de votre assurance santé et offrez un véritable avantage 
-            à vos salariés.
-          </p>
-        </li>
-        <li class="card-offer">
-          <div class="card-offer__container--title">
-            <img class="card-offer__icon" src="assets/emoji-building.svg" alt="Emoji immeuble" width="80px">
-            <h3 class="card-offer__title">Grandes entreprises</h3>
-          </div>
-          <p class="card-offer__description">
-            Automatisez les tâches administratives et faites du bien-être un axe RH stratégique.
-          </p>
-        </li>
-        <li class="card-offer">
-          <div class="card-offer__container--title">
-            <img class="card-offer__icon" src="assets/emoji-restaurant.svg" alt="Emoji restaurant">
-            <h3 class="card-offer__title">Hôtels & Restaurants</h3>
-          </div>
-          <p class="card-offer__description">
-            Simplifiez-vous la gestion de l’assurance santé et donnez accès à la santé à vos 
-            salariés.
-          </p>
-        </li>
-        <li class="card-offer">
-          <div class="card-offer__container--title">
-            <img class="card-offer__icon" src="assets/emoji-indépendant.svg" alt="Emoji indépendants">
-            <h3 class="card-offer__title">Indépendants</h3>
-          </div>
-          <p class="card-offer__description">
-            Oubliez la paperasse et profitez d’une couverture santé complète pour un reste à charge 
-            minimal.
-          </p>
-        </li>
-      </ul>
+      <div class="flux">
+        <ul class="offers__list">
+          <li class="card-offer">
+            <div class="card-offer__container-title">
+              <img class="card-offer__icon"
+                src="assets/emoji-rocket.svg"
+                alt="Emoji fusée">
+              <h3 class="card-offer__title">Startups & PME</h3>
+            </div>
+            <p class="card-offer__description">
+              Gagnez du temps sur la gestion de votre assurance santé et offrez un véritable avantage
+              à vos salariés.
+            </p>
+          </li>
+          <li class="card-offer">
+            <div class="card-offer__container-title">
+              <img class="card-offer__icon"
+                src="assets/emoji-building.svg"
+                alt="Emoji immeuble"
+                width="80px">
+              <h3 class="card-offer__title">Grandes entreprises</h3>
+            </div>
+            <p class="card-offer__description">
+              Automatisez les tâches administratives et faites du bien-être un axe RH stratégique.
+            </p>
+          </li>
+          <li class="card-offer">
+            <div class="card-offer__container-title">
+              <img class="card-offer__icon"
+                src="assets/emoji-restaurant.svg"
+                alt="Emoji restaurant">
+              <h3 class="card-offer__title">Hôtels & Restaurants</h3>
+            </div>
+            <p class="card-offer__description">
+              Simplifiez-vous la gestion de l’assurance santé et donnez accès à la santé à vos
+              salariés.
+            </p>
+          </li>
+          <li class="card-offer">
+            <div class="card-offer__container-title">
+              <img class="card-offer__icon"
+                src="assets/emoji-indépendant.svg"
+                alt="Emoji indépendants">
+              <h3 class="card-offer__title">Indépendants</h3>
+            </div>
+            <p class="card-offer__description">
+              Oubliez la paperasse et profitez d’une couverture santé complète pour un reste à charge
+              minimal.
+            </p>
+          </li>
+        </ul>
+      </div>
     </section>
-    <!-- End : Second section -->
+    <!-- End : Second section = OFFERS -->
+
     <!-- Start : Third section -->
     <section>
       <div>
@@ -127,6 +132,7 @@
       </div>
     </section>
     <!-- End : Third section -->
+
     <!-- Start : Fourth section -->
     <section>
       <h2>300380 membres et 19000 entreprises ont choisi Alan pour leur grand bien</h2>
@@ -168,6 +174,7 @@
       </ul>
       </section>
       <!-- End : Fourth section -->
+
     <!-- Start : Fifth section -->
     <section>
       <div>
@@ -195,7 +202,9 @@
       </p>
     </section>
     <!-- End : Fifth section -->
+
   </main>
-  <!-- End : Main -->
+  <!-- End : MAIN -->
+
 </body>
 </html>
