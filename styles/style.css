@@ -8,6 +8,7 @@
   --color-blue: #5269d1;
   --color-green: #22e39e;
   --color-grey: #777474;
+  --color-orange: #ff4500;
   --color-whitesmoke: #f5f5f5;
   --color-white: #ffffff;
   --font-size-title: 38px;
@@ -252,11 +253,7 @@
   font-size: 14px;
 }
 
-.services__image {
-  width: 100%;
-}
-
-.services__image-alan-mind {
+.services__image, .services__image-alan-mind {
   width: 100%;
 }
 
@@ -315,4 +312,53 @@
 
 .users__description {
   padding: 10px 35px;
+}
+
+/*
+    ********** DESCRIPTION **********
+*/
+
+.description {
+  display: flex;
+}
+
+.description__images-left, .description__images-right {
+  width: 225px;
+  height: 300px;
+}
+
+.description__images-left {
+  padding-right: 10px;
+  padding-top: 24px;
+}
+
+.description__images-right {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+}
+
+.description__description {
+  padding: 5px 55px;
+}
+
+.description__title {
+  font-size: var(--font-size-title);
+}
+
+.description__title strong {
+  color: var(--color-green);
+}
+
+.description__title--orange {
+  padding-top: 15px; 
+}
+
+.description__title--orange strong {
+  color: var(--color-orange);
+}
+
+.description__paragraph {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
