@@ -151,7 +151,7 @@
   padding-left: 160px;
 }
 
-.offers__title span {
+.offers__title strong {
   color: var(--color-blue);
 }
 
@@ -160,8 +160,9 @@
   border-radius: 10px;
   font-size: var(--font-size-p);
   font-weight: 600;
-  padding: 10px 160px;
   margin-bottom: 15px;
+  margin-left: 160px;
+  width: 1188px;
 }
 
 .offers__introduction span {
