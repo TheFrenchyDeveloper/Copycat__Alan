@@ -5,6 +5,10 @@
 :root {
   --color-blue: #5269d1;
   --color-green: #22e39e;
+  --color-grey: #777474;
+  --font-size-title: 38px;
+  --font-size-p: 22px;
+  --font-size-link: 18px;
 }
 
 /* 
@@ -48,18 +52,17 @@
 
 .header__nav .header__link {
   border-radius: 10px;
-  font-size: 18px;
+  font-size: var(--font-size-link);
   padding: 5px 10px;
 }
 
 .header__nav .header__link--grey {
-  color: #777474;
+  color: var(--color-grey);
 }
 
 .header__nav .header__link--blue {
   border: solid 2px #f0ecec;
   color: var(--color-blue);
-  font-size: 22px;
   font-weight: 900;
 }
 
@@ -81,7 +84,7 @@
 */
 
 .cover {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   padding-top: 80px;
 }
 
@@ -92,7 +95,7 @@
 }
 
 .cover__title {
-  font-size: 38px;
+  font-size: var(--font-size-title);
   padding-bottom: 20px;
   padding-top: 8px;
 }
@@ -102,7 +105,7 @@
 }
 
 .cover__description {
-  font-size: 22px;
+  font-size: var(--font-size-p);
   line-height: 1;
   padding-bottom: 48px;
 }
@@ -111,6 +114,7 @@
   background-color: var(--color-blue);
   border-radius: 10px;
   color: white;
+  font-size: var(--font-size-link);
   font-weight: 900;
   padding: 8px 12px;
 }
@@ -134,11 +138,11 @@
 
 .offers {
   background-color: #eef0fb;
-  padding: 20px 0;
+  padding: 20px 0 45px 0;
 }
 
 .offers__title {
-  font-size: 42px;
+  font-size: var(--font-size-title);
   margin-bottom: 10px;
   padding-left: 160px;
 }
@@ -150,7 +154,7 @@
 .offers__introduction {
   background-color: #fff3fc;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: var(--font-size-p);
   font-weight: 600;
   padding: 10px 160px;
   margin-bottom: 15px;
@@ -162,6 +166,7 @@
 
 .offers__link {
   color: var(--color-blue);
+  font-size: var(--font-size-link);
 }
 
 .offers__list {
@@ -170,7 +175,7 @@
 }
 
 .card-offer {
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 0px 14px 1px #00000099;
   overflow: hidden;
@@ -196,4 +201,56 @@
 .card-offer__description {
   padding: 10px 10px;
   margin-bottom: 20px;
+}
+
+/*
+    ********** SERVICES **********
+*/
+
+.services {
+  flex-direction: row-reverse;
+  padding: 50px 25px;
+}
+
+.services-container__description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+.services__title {
+  font-size: var(--font-size-title);
+  padding: 65px 0 25px 0;
+}
+
+.services__title strong {
+  color: var(--color-blue);
+}
+
+.services__title-2 {
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.services__description {
+  font-size: var(--font-size-p);
+  padding: 15px 55px 0 0;
+}
+
+.services__link {
+  color: var(--color-blue);
+  font-size: var(--font-size-link);
+  padding-bottom: 15px;
+}
+
+.services__reference {
+  font-size: 14px;
+}
+
+.services__image {
+  width: 100%;
+}
+
+.services__image-alan-mind {
+  width: 100%;
 }
